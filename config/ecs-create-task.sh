@@ -1,7 +1,7 @@
 #!/bin/bash
 SERVICE_NAME="express-test-service"
 IMAGE_VERSION="v_"${BUILD_NUMBER}
-TASK_FAMILY="express-test"
+TASK_FAMILY="basic-express"
 
 # Create a new task definition for this build
 sed -e "s;%BUILD_NUMBER%;${BUILD_NUMBER};g" ./config/basic-express.json > basic-express-v_${BUILD_NUMBER}.json
