@@ -1,0 +1,18 @@
+{
+   "family": "basic-express",
+   "containerDefinitions": [
+       {
+           "image": "juliusthepious/basic-express:v_%BUILD_NUMBER%",
+           "name": "basic-express",
+           "cpu": 10,
+           "memory": 256,
+           "essential": true,
+           "portMappings": [
+               {
+                   "containerPort": 8080,
+                   "hostPort": 80
+               }
+           ]
+       }
+   ]
+}
