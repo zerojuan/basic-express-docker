@@ -1,0 +1,11 @@
+{
+  "name": "docker_node",
+  "version": "1.0.0",
+  "description": "Nodejs on Docker",
+  "author": "Julius",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engine": "node 4.2.5"
+}
