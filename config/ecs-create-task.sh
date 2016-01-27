@@ -5,7 +5,7 @@ TASK_FAMILY="basic-express"
 REGION="ap-southeast-2"
 
 # Create a new task definition for this build
-sed -e "s;%BUILD_NUMBER%;${BUILD_NUMBER};g" ./config/basic-express.json > basic-express-v_${BUILD_NUMBER}.json --region ${REGION}
+sed -e "s;%BUILD_NUMBER%;${BUILD_NUMBER};g" ./config/basic-express.json > basic-express-v_${BUILD_NUMBER}.json
 aws ecs register-task-definition --family basic-express --cli-input-json file://basic-express-v_${BUILD_NUMBER}.json --region ${REGION}
 
 # Update the service with the new task definition and desired count
