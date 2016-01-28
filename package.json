@@ -5,6 +5,7 @@
   "author": "Julius",
   "main": "server.js",
   "dependencies": {
+    "aws-sdk": "^2.2.32",
     "express": "^4.13.3"
   },
   "engine": "node 4.2.5"
